@@ -1,38 +1,59 @@
-.App {
+.App{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.header{
+    margin-top: 5px;
+    padding-right: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.beer-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
   text-align: center;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform .3s;
+  box-shadow: 5px 5px 8px #888888;
+
+}
+.beer-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 8px 8px 8px #888888;/* Zoom in effect on hover (adjust scale value as needed) */
+  /* Add any other transformations you want, like box shadow or rotation */
+}
+.beer-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.beer-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.beer-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .beer-card {
+    max-width: 100%;
+    margin: 20px auto;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+   font-weight: bold;
 }
