@@ -29,7 +29,7 @@
   /* Add any other transformations you want, like box shadow or rotation */
 }
 .beer-card img {
-  max-width: 100%;
+  max-width: 40%;
   border-radius: 8px;
   margin-bottom: 10px;
 }
