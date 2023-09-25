@@ -29,7 +29,7 @@ const App = () => {
           />
         </div>
       </div>
-      <div className="row">
+      <div className="row" >
         {filteredBeers.map((beer,index) => (
           <div key={index} className="col-md-4">
             <BeerCard beer={beer} />
