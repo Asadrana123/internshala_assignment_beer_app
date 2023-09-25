@@ -1,8 +1,9 @@
 import React from 'react';
 
 const BeerCard = ({ beer }) => (
+  <>
   <div className="beer-card">
-    <img src={beer.image_url} alt={beer.name} />
+  <img src={beer.image_url} alt={beer.name} />
     <h2>{beer.name}</h2>
     <p>{beer.tagline}</p>
     <p>ABV: {beer.abv}%</p>
@@ -34,6 +35,7 @@ const BeerCard = ({ beer }) => (
     </ul>
     <p>Yeast: {beer.ingredients.yeast}</p>
   </div>
+  </>
 );
 
 export default BeerCard;
